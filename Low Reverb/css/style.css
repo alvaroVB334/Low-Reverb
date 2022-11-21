@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Average&display=swap'); /*font-family: 'Average', serif;*/
+
+@font-face { /*font-family: 'Cambria', regular;*/
+    font-family: 'Cambria';
+    src: url('/fonts/cambria.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+/*
+*   Colors:
+*   #100F0F
+
+
+    #0F3D3E
+
+    #E2DCC8
+
+    #F1F1F1
+
+*
+*/
+*{
+    font-family: 'Cambria', regular;
+}
+button{
+    text-decoration: none;
+    background-color: #100F0F;
+    color: #F1F1F1;
+}
+
+body{
+    margin: 0;
+}
+header{
+    background-color: #100F0F;
+    height: 5em;
+    
+    display:flex;
+    align-content: center;
+    
+    direction: row;
+    justify-content: space-between;
+    
+}
+.header :nth-child(1){
+    width: 30%;
+}
+.header :nth-child(2){
+    width: 30%;
+}
+.header :nth-child(3){
+    width:30%;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#100F0F;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+/*Carrusel imagenes*/
+.slider-container {
+    scroll-snap-type: x mandatory;
+  }
+
+.slider-container img{
+    scroll-snap-align: center;
+}
+
+
+#logo{
+    height: 100%;
+    width: 100%;
+    
+}
+.divDerecha{
+    margin-right: -30px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    
+}
+.imagenLogo{
+    margin-right: 20px;
+}
+button:hover{
+    background-color:#434343;
+}
+#carruselIMagenes{
+    height: auto;
+    width: 100%;
+}
