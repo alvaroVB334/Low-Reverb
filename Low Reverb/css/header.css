@@ -1,0 +1,83 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: #100F0F;
+  height: 5em;
+  display: flex;
+  align-content: center;
+  direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+header button {
+  text-decoration: none;
+  background-color: #100F0F;
+  color: #F1F1F1;
+}
+header .nav > li {
+  float: left;
+}
+header .nav li a {
+  background-color: #100F0F;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+header .nav li a:hover {
+  background-color: #434343;
+}
+header .nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+header .nav li ul li {
+  position: relative;
+}
+header .nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+header .nav li:hover > ul {
+  display: block;
+}
+header .nav ul,
+header .nav ol {
+  list-style: none;
+}
+header .header :nth-child(1) {
+  background-color: #100F0F;
+  width: 30%;
+}
+header .header :nth-child(2) {
+  background-color: #100F0F;
+  width: 30%;
+}
+header .header :nth-child(3) {
+  background-color: #100F0F;
+  width: 30%;
+}
+header #logo {
+  height: 100%;
+  /* width: 100%; */
+}
+header .divDerecha {
+  margin-right: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  min-width: 20%;
+}
+header .imagenLogo {
+  margin-right: 20px;
+}
+header #divIzquierda {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 1em;
+  min-width: 20%;
+}/*# sourceMappingURL=header.css.map */

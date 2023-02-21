@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Average&display=swap'); /*font-family: 'Average', serif;*/
+
+@font-face { /*font-family: 'Cambria', regular;*/
+    font-family: 'Cambria';
+    src: url('/fonts/cambria.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  *{
+    font-family: 'Cambria', regular;
+}
+
+$colorUno: #100F0F;
+$colorDos:#0F3D3E;
+// $colorTres:#E2DCC8;
+$colorTres:#f5fa70;
+$colorCuatro:#F1F1F1;
+
+
+body{
+    margin: 0;
+
+    background-color: $colorTres;
+    h1{
+        font-family: 'Average', serif;
+        color: $colorTres;
+    }
+    button{
+        text-decoration: none;
+        background-color: $colorUno;
+        color: $colorCuatro;
+    }
+
+    ::-webkit-scrollbar{
+        width: 7px;
+        background-color: $colorUno;
+    }
+    ::-webkit-scrollbar-thumb{
+        width: 7px;
+        background-color: $colorCuatro;
+        border-radius: 10px;
+    }
+}
+
+.divShadow{
+  
+    height: 5%;
+    background-color: $colorUno;
+}
+
+.shadowBox{
+    box-shadow: 10% 10% 10px;
+}
+.cuadroTexto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $colorUno;
+    height: 12em;
+    align-items: center;
+    color: white;
+    padding: 3em;
+}

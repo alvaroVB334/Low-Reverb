@@ -1,0 +1,32 @@
+#Marcas {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Cambria", regular;
+  font-size: 3em;
+}
+
+#contenedorMarcas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filaMarcas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.itemMarca {
+  width: 17%;
+  box-shadow: 0px 5px 9px grey;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  display: flex;
+}
+
+.imgMarca {
+  width: 70%;
+  align-self: center;
+}/*# sourceMappingURL=marcas.css.map */

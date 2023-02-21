@@ -4,25 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 
     <title>Low Reverb - Feel the Sound! </title>
+
+    <style>
+      .difuminado{
+      filter: blur(3px);
+    } 
+
+    .movimientoLupa{
+      margin-left:10em ;
+    }
+
+    .movimientoLupa:focus{
+      margin-left: 0px;
+      margin-right:10em ;
+      transition-property:all ;
+      transition-duration:0.1s ;
+      transition-timing-function:linear ;
+    }
+    
+    </style>
 </head>
 <body>
 
     <!--Header-->
-    <header>
+    <header class="shadowBox">
         <!--Botones izquierda-->
-        <div>
+        <div id="divIzquierda">
             <ul class="nav">
-				<li><a href="">Colecciones</a>
+				<li><a href="colecciones.html">Colecciones</a>
                     <ul>
-						<li><a href="">Submenu1</a></li>
-						<li><a href="">Submenu2</a></li>
-						<li><a href="">Submenu3</a></li>
-						<li><a href="">Submenu4</a></li>
+						<li><a href="">Cuerda</a></li>
+						<li><a href="">Viento</a></li>
+						<li><a href="">Percusión</a></li>
+						
 					</ul>
                 </li>
 				<li><a href="">Hardware</a>
@@ -49,97 +68,192 @@
     
         <!--Logo-->
         <div class="imagenLogo">
-            <img id="logo" src="./img/lowReverbLogo (1).png">
+          <a href="index.html"><img id="logo" src="./img/lowReverbLogo (1).png"></a>
         </div>
 
         <!--Botones derecha-->
         <div class="divDerecha">
-            <button><img src="/img/icons/lupa.png" alt="" height="30em"></button>
-            <button><img src="/img/icons/carrito-de-compras.png" alt="" height="30em"></button>
-            <button><img src="/img/icons/usuario.png" alt="" height="25em"></button>
+            <button id="lupa" class="movimientoLupa" onclick="crearBusqueda()" style="border: 0;"><img src="img/icons/lupa.png" height="30em"></button>
+            <button style="border: 0;"><img src="img/icons/carrito-de-compras.png" height="27em"></button>
+            <button style="border: 0;"><a href="login.html"><img src="img/icons/usuario.png" height="24em"></a></button>
         </div>
     </header>
 
 
     <!--Carrusel-->
-    <div id="carruselImagenes">
-        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+   <div id="carruselImagenes" > 
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
+              <!--Botones de abajo-->
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/img/captura 1 practica 3.png" class="d-block w-100" alt="..." width="100em" height="400em">
+                <img src="img/midjourneyPiano1_recor.webp" class="d-block w-100 " alt="..."  height="700em">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <h1 style="color: #F1F1F1; text-shadow: 0.1em 0.1em black;">Comprometidos con la calidad</h1>
+                  <p style="color: #F1F1F1; text-shadow: 0.1em 0.1em black;">Calidad 100% Artesanal certificada</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="/img/captura 2 practica 3 nodemon.png" class="d-block w-100" alt="..." width="100em" height="400em">
+                <img src="img/midjourneyPiano2_recor.webp" class="d-block w-100" alt="..." width="100em" height="700em">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h1 style="color: #F1F1F1; text-shadow: 0.1em 0.1em black;">¡Muy Nuestros!</h1>
+                  <p style="color: #F1F1F1; text-shadow: 0.1em 0.1em black;">Fieles a nuestros productos, confianza y garantía en los mismos</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="/img/captura 2 practica 3.png" class="d-block w-100" alt="..." width="100em" height="400em">
+                <img src="img/midjourneyPiano3_recor.webp" class="d-block w-100" alt="..." width="100em" height="700em">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h1 style="color: #F1F1F1; text-shadow: 0.1em 0.1em black;">Músicos profesionales a tu servicio</h1>
+                  <p style="color: #F1F1F1; text-shadow: 0.1em 0.1em black;">Profesionales y expertos en música e instrumentos a tu servicio las 24h</p>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <!--boton previo-->
+            <button class="carousel-control-prev botonCarrusel" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <!--Boton luego-->
+            <button class="carousel-control-next botonCarrusel" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
-            </button> -->
-          <!-- </div> -->
+            </button> 
+           </div> 
 
-    </div>
+    </div> 
 
 
+    <!-- <div>
+      <div id="divVideo">
+        
+        <video class="video" loop=true autoplay=true muted=true src="img/video2.mp4">
+        <h1 style="color: blue;">Porfavor fernando, perdonanos</h1>
+        <h3>te iremos a ver al jazz y te ayudaremos con las cajas</h3>
+        
+      </div> -->
+  </div>
+
+  <br/>  <br/>
+    
     <!--cuadro de texto-->
-    <div></div>
+  
+    
+    <div class="cuadroTexto shadow">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum vehicula erat, non lacinia magna fringilla non. Sed eu sodales leo. Nulla eget mauris iaculis, pretium tellus at, tincidunt ipsum. Ut rutrum nec felis nec eleifend. Nullam vitae imperdiet elit. Nulla nec tempor elit, eget feugiat augue. Sed vel lorem eget turpis tristique consectetur. Etiam nec vulputate sem, at placerat mi. Curabitur convallis justo ut arcu luctus, at fermentum nulla accumsan.
 
 
+      <img height="250em" src="img/denny-muller-kLienjClTmY-unsplash.jpg"></div>
+
+    <br/>  <br/>
     <!--Marcas-->
-    <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <div id="Marcas"> <h2>MARCAS</h2> </div>
+    <br/><br/>
+    
+    <div id="contenedorMarcas">
+      <div class="filaMarcas">
+       
 
+          <div class="itemMarca"><img class="imgMarca" src="img/samson.png"></div>
+          <div class="itemMarca"><img class="imgMarca" src="img/sabian.png"></div>
+          <div class="itemMarca"><img class="imgMarca" src="img/savarez-logo.png"></div>
+          <div class="itemMarca"><img class="imgMarca" src="img/hohner.png"></div>
+      </div>
+      <br/><br/>
+      <div class="filaMarcas">
+        <div class="itemMarca"><img class="imgMarca" src="img/casio.png"></div>
+          <div class="itemMarca"><img class="imgMarca" src="img/shure.png"></div>
+          <div class="itemMarca"><img class="imgMarca" src="img/Fender.png"></div>
+          <div class="itemMarca"><img class="imgMarca" src="img/paiste.png"></div>
+
+
+      </div>
 
     </div>
-
-
-    <!--footer-->
-
+    <br/>
+    
     <footer>
-
+      <div class="prefoot"></div>
+      <div class="gridfoot">
+        <div class="div1">
+          <p>Condiciones Generales</p>
+          <p>Politicas de privacidad</p>
+          <p>Ajustes de privacidad</p>
+          <p>Politicas de Cookies</p>
+          <p>Derechos de Garantía</p>
+          <p>Políticas de Envios</p>
+        </div>
+        <div class="div2">
+          <img src="img/icons/icons8-facebook-48.png" height="30em">
+          <img src="img/icons/icons8-tik-tok-50.png" height="28em">
+          <img src="img/icons/icons8-twitter-50.png" height="28em">
+          <img src="img/icons/icons8-instagram-24.png" height="30em">
+          <br>
+          <br>
+          <br>
+          <p>Sobre Nosotros</p>
+          <p>Foros</p>
+          <p>Clasificados</p>
+          <p>Encuentranos</p>
+        </div>
+        
+        <div class="div5">
+          <img src="img/Google-Play-Store-Button.png" height="30em">
+          <img src="img/App-Store-Button-transparent.png" height="30em">
+          <br>
+          <br>
+          <p>Chatea con nosotros 💬</p>
+          <br>
+          <br>
+          <p style="text-decoration: none;">© 1996–2022 Low Reverb.</p>
+          <p style="text-decoration: none; cursor: default;"><b>Feel the Sound!</b></p>
+        </div>
+        <div id="reproductor">
+          <audio id="player">
+            <source src="cancion.mp3" type="audio/mpeg" />
+            <source src="cancion.ogg" type="audio/ogg" />
+            </audio>
+            <img src="img/botonPlay.png"
+            onClick="document.getElementById('player').
+            play() "></img>
+            <img src="img/botonPausa.png"
+            onClick="document.getElementById('player').
+            pause() "></img>
+            <img src="img/botonVolumenUp.png"
+            onClick="document.getElementById('player').
+            volume+=O.l"> </img>
+            <img src="img/botonVolumenDown.png"
+            onClick="document.getElementById('player').
+            volume-=O.l"> </img> 
+            
+        </div>
+      </div>
 
 
     </footer>
     
+    
+      <script>
+        function crearBusqueda(){
+       
+        let cuadroBusqueda= document.createElement("input");
+        cuadroBusqueda.type="text";
+        document.getElementById("Lupa").appendChild("cuadroBusqueda");
+
+          
+        
+      }
+
+      </script>
 
 
 
 
 
-
-
-
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>

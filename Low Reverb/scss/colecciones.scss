@@ -1,0 +1,23 @@
+.contenedorColecciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.filaColecciones{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.itemColecciones{
+    width: 17%;
+    box-shadow: 0px 5px 9px grey;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    display: flex;
+}
+
+.imagenColecciones{
+    max-width: 10em;
+}

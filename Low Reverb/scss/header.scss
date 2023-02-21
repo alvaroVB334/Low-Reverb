@@ -1,0 +1,141 @@
+@mixin child-color {
+    background-color: #100F0F;
+    width: 30%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+    background-color: #100F0F;
+    height: 5em;
+
+    display: flex;
+    align-content: center;
+
+    direction: row;
+    justify-content: space-between;
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .6);
+
+    button{
+        text-decoration: none;
+        background-color: #100F0F;
+        color: #F1F1F1;
+    }
+
+        
+
+    
+
+
+
+
+    .nav {
+
+        > li{
+            float: left;
+        }
+        li {
+            
+
+            a {
+                background-color: #100F0F;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 12px;
+                display: block;
+
+
+
+            }
+
+            a:hover {
+                background-color: #434343;
+
+                // > ul {
+                //     display: block;
+                // }
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                min-width: 140px;
+
+                li {
+                    position: relative;
+
+                    ul {
+                        right: -140px;
+                        top: 0px;
+                    }
+                }
+            }
+
+        }
+
+        li:hover{
+            > ul{
+                display:block;
+            }
+        }
+
+       
+        ul,
+        ol {
+            list-style: none;
+        }
+
+    }
+
+    .header :nth-child(1) {
+        @include child-color();
+    }
+
+    .header :nth-child(2) {
+        @include child-color();
+    }
+
+    .header :nth-child(3) {
+        @include child-color();
+    }
+
+
+
+
+
+    #logo {
+        height: 100%;
+        /* width: 100%; */
+
+    }
+
+
+    .divDerecha {
+
+        margin-right: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        min-width: 20%;
+
+    }
+
+    .imagenLogo {
+        margin-right: 20px;
+    }
+
+    #divIzquierda {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 1em;
+        min-width: 20%;
+
+    }
+
+
+}
+
