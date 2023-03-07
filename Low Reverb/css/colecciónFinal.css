@@ -84,6 +84,7 @@ header #divIzquierda {
   min-width: 20%;
 }
 
+
 /*font-family: 'Average', serif;*/
 @font-face { /*font-family: 'Cambria', regular;*/
   font-family: "Cambria";
@@ -97,6 +98,7 @@ header #divIzquierda {
 
 body {
   margin: 0;
+  background-color: #1e1f26;
 }
 body h1 {
   font-family: "Average", serif;
@@ -194,6 +196,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   background: #FFF;
   margin: 2em 15px 5em;
   padding: 1.2em 1.5em;
+  background-color: #1e1f26;
 }
 .s-products-head-left{
   float:left;
@@ -201,7 +204,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 .s-products-head-left h3{
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #ffffff;
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -228,16 +231,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 /*----*/
 .special-products-grids{
-
+  display: flex;
+  flex-wrap: wrap;
   margin:1.3em 0;
 }
 .special-products-grid{
+  display:inline-block;
+  vertical-align: top;
+  margin: 0 10px;
   border: 1px solid #E2E2E2;
   padding:0.5em 0.5em 1em 0.5em;
   border-radius:0.3em;
   -webkit-border-radius:0.3em;
   -moz-border-radius:0.3em;
-  flex: 1;
   -o-border-radius:0.3em;
   -ms-border-radius:0.3em;
   transition:0.5s all;
@@ -261,7 +267,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 .special-products-grid h4 a{
   font-weight: 600;
-  color: #2E2E2E;
+  color: #ffffff;
   margin: 0 0 1em;
   display: block;
 }

@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 5;
   background-color: #100F0F;
@@ -9,6 +10,7 @@ header {
   direction: row;
   justify-content: space-between;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+
 }
 header button {
   text-decoration: none;
@@ -80,4 +82,23 @@ header #divIzquierda {
   justify-content: space-around;
   margin-left: 1em;
   min-width: 20%;
-}/*# sourceMappingURL=header.css.map */
+}
+
+/*font-family: 'Average', serif;*/
+@font-face { /*font-family: 'Cambria', regular;*/
+  font-family: "Cambria";
+  src: url("/fonts/cambria.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  font-family: "Cambria", regular;
+}
+
+body {
+  margin: 0;
+}
+body h1 {
+  font-family: "Average", serif;
+  color: #E2DCC8;
+}
