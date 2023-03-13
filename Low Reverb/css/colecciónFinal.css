@@ -109,11 +109,11 @@ body button {
   background-color: #100F0F;
   color: #F1F1F1;
 }
-body ::-webkit-scrollbar {
+body::-webkit-scrollbar{
   width: 7px;
   background-color: #100F0F;
 }
-body ::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb{
   width: 7px;
   background-color: #F1F1F1;
   border-radius: 10px;
@@ -253,7 +253,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   -ms-transition:0.5s all;
 }
 .special-products-grid:hover{
-  border:1px solid #100F0F;
+  border:1px solid #0F3D3E;
 }
 .product-here img{
   width: 100%;

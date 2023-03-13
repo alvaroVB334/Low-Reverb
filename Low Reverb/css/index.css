@@ -112,11 +112,11 @@ body button {
   background-color: #100F0F;
   color: #F1F1F1;
 }
-body ::-webkit-scrollbar {
+body::-webkit-scrollbar{
   width: 7px;
   background-color: #100F0F;
 }
-body ::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb{
   width: 7px;
   background-color: #F1F1F1;
   border-radius: 10px;
