@@ -1,20 +1,178 @@
-/*--
-Author: W3layouts	
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-html, body{
-    font-family: 'Lato', sans-serif;
-  font-size: 100%;
-     background: #F2F2F2;
+@import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
+header {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  background-color: #100F0F;
+  height: 5em;
+  display: flex;
+  align-content: center;
+  direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+
 }
-body a{
-  transition:0.5s all;
-  -webkit-transition:0.5s all;
-  -moz-transition:0.5s all;
-  -o-transition:0.5s all;
-  -ms-transition:0.5s all;
+header button {
+  text-decoration: none;
+  background-color: #100F0F;
+  color: #F1F1F1;
+}
+header .nav > li {
+  float: left;
+}
+header .nav li a {
+  background-color: #100F0F;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+header .nav li a:hover {
+  background-color: #434343;
+}
+header .nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+header .nav li ul li {
+  position: relative;
+}
+header .nav li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+header .nav li:hover > ul {
+  display: block;
+}
+header .nav ul,
+header .nav ol {
+  list-style: none;
+}
+header .header :nth-child(1) {
+  background-color: #100F0F;
+  width: 30%;
+}
+header .header :nth-child(2) {
+  background-color: #100F0F;
+  width: 30%;
+}
+header .header :nth-child(3) {
+  background-color: #100F0F;
+  width: 30%;
+}
+header #logo {
+  height: 100%;
+  /* width: 100%; */
+}
+header .divDerecha {
+  margin-right: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  min-width: 20%;
+}
+header .imagenLogo {
+  margin-right: 20px;
+}
+header #divIzquierda {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 1em;
+  min-width: 20%;
+}
+
+
+/*font-family: 'Average', serif;*/
+@font-face { /*font-family: 'Cambria', regular;*/
+  font-family: "Cambria";
+  src: url("/fonts/cambria.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  font-family: "Cambria", regular;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+body h1 {
+  font-family: "Average", serif;
+  color: #E2DCC8;
+}
+body button {
+  text-decoration: none;
+  background-color: #100F0F;
+  color: #F1F1F1;
+}
+body::-webkit-scrollbar{
+  width: 7px;
+  background-color: #100F0F;
+}
+body::-webkit-scrollbar-thumb{
+  width: 7px;
+  background-color: #F1F1F1;
+  border-radius: 10px;
+}
+.gridfoot {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 150px;
+  grid-row-gap: 0px;
+  height: 16.5em;
+  background-color: #100F0F;
+  padding: 1em;
+  color: white;
+}
+
+.div1 {
+  grid-area: 1/1/2/2;
+  margin-top: 1em;
+  margin-left: 1em;
+  font-size: smaller;
+}
+
+.div2 {
+  grid-area: 1/2/2/3;
+  margin-top: 1em;
+  font-size: smaller;
+}
+
+.div3 {
+  grid-area: 2/2/3/3;
+}
+
+.div4 {
+  grid-area: 1/3/2/4;
+}
+
+.div5 {
+  grid-area: 1/4/2/5;
+  margin-top: 1em;
+  font-size: smaller;
+}
+
+.div6 {
+  grid-area: 2/3/3/4;
+}
+
+.div7 {
+  grid-area: 3/3/4/4;
+}
+
+.prefoot {
+  background-color: rgb(222, 222, 222);
+  height: 9em;
+}
+
+.gridfoot p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 /*----container----*/
 .container{
@@ -1073,7 +1231,7 @@ a.rate span:hover{
   width:75%;
 }
 .product-price-left span{
-  background: #E71F25;
+  background: #0F3D3E;
   color: #FFF;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -1169,9 +1327,9 @@ a.shipping span{
   float:right;
 }
 .add-cart-btn input[type="button"]{
-  background: url(../images/cart-icon.png) no-repeat 136px 13.5px #EF3326;
-  border: 1px solid #B64E30;
-  border-top: 2px solid #B64E30;
+  background: url(../images/cart-icon.png) no-repeat 136px 13.5px #0F3D3E;
+  border: 1px solid #0F3D3E;
+  border-top: 2px solid #0F3D3E;
   color: #FFF;
   font-size: 1.2em;
   outline: none;
@@ -1267,7 +1425,7 @@ a.shipping span{
 
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
   color: #FFF;
-  background-color: #EE2D23;
+  background-color: #0F3D3E;
 }
 
 .r-tabs .r-tabs-panel {
@@ -1281,7 +1439,7 @@ a.shipping span{
 .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
   display: block;
   padding: 10px;
-  background-color: #F2262C;
+  background-color: #0F3D3E;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -1294,7 +1452,7 @@ a.shipping span{
 
 .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
   background-color: #fff;
-  color: #F03627;
+  color: #0F3D3E;
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
@@ -1398,10 +1556,10 @@ a.shipping span{
   font-family: 'Open Sans', sans-serif;
 }
 span.mail a {
-  color:#FE3026;
+  color#0F3D3E;
 }
 span.mail a:hover{
-  color:#626262;
+  color:#E2DCC8;
   text-decoration:none;
 }
 .contact-to input[type="text"] {
@@ -1465,9 +1623,9 @@ span.mail a:hover{
   border: 1px solid #FE3026;
 }
 .contact-form input[type="submit"] {
-  background:#EF3326;
-  border: 1px solid #B64E30;
-  border-top: 2px solid #B64E30;
+  background:#0F3D3E;
+  border: 1px solid #0F3D3E;
+  border-top: 2px solid #0F3D3E;
   color: #FFF;
   font-size: 1.2em;
   outline: none;

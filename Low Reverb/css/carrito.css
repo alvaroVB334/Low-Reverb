@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 5;
   background-color: #100F0F;
@@ -12,16 +10,7 @@ header {
   direction: row;
   justify-content: space-between;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
-  font-family: 'Montserrat', sans-serif;
-}
-body::-webkit-scrollbar{
-  width: 7px;
-  background-color: #100F0F;
-}
-body::-webkit-scrollbar-thumb{
-  width: 7px;
-  background-color: #F1F1F1;
-  border-radius: 10px;
+
 }
 header button {
   text-decoration: none;
@@ -95,11 +84,6 @@ header #divIzquierda {
   min-width: 20%;
 }
 
-#carruselIMagenes {
-  height: auto;
-  width: 100%;
-  z-index: 1;
-}
 
 /*font-family: 'Average', serif;*/
 @font-face { /*font-family: 'Cambria', regular;*/
@@ -114,6 +98,7 @@ header #divIzquierda {
 
 body {
   margin: 0;
+  background-color: #1e1f26;
 }
 body h1 {
   font-family: "Average", serif;
@@ -124,69 +109,15 @@ body button {
   background-color: #100F0F;
   color: #F1F1F1;
 }
-body ::-webkit-scrollbar {
+body::-webkit-scrollbar{
   width: 7px;
   background-color: #100F0F;
 }
-body ::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb{
   width: 7px;
   background-color: #F1F1F1;
   border-radius: 10px;
 }
-
-.divShadow {
-  height: 5%;
-  background-color: #100F0F;
-}
-
-.shadowBox {
-  box-shadow: 10% 10% 10px;
-}
-
-.cuadroTexto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #100F0F;
-  height: 12em;
-  align-items: center;
-  color: white;
-  padding: 3em;
-}
-
-#Marcas {
-  display: flex;
-  justify-content: space-around;
-  font-family: "Cambria", regular;
-  font-size: 3em;
-}
-
-#contenedorMarcas {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.filaMarcas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.itemMarca {
-  width: 17%;
-  box-shadow: 0px 5px 9px grey;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  display: flex;
-}
-
-.imgMarca {
-  width: 70%;
-  align-self: center;
-}
-
 .gridfoot {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -242,47 +173,27 @@ body ::-webkit-scrollbar-thumb {
 .gridfoot p:hover {
   text-decoration: underline;
   cursor: pointer;
-}/*# sourceMappingURL=index.css.map */
-#reproductor img{
-  width: 4em;
 }
-#reproductor{
-  position: relative;
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
 }
 
-.divSelector{
-  width: 40%;
-  height: 20em;
- 
- }
-
-.imagenSelector{
- width: 100%;
-height: 99%;
-
+.card {
+    margin: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 1rem;
 }
 
-.imagenSelector:hover {
-  transition: 0.5s;
-  transform: scale(1.1);
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.5rem 1.5rem;
 }
-
-#selectorClases{
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  
-}
-
-
-
-
-
- .sombraHeader{
-  position: relat;
-  display: flex;
-  flex-direction: column;
- }
